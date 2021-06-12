@@ -72,7 +72,7 @@ class ReportPDF extends CI_Controller {
       }
       $output .= "</table>";
       $mpdf->WriteHTML($output);
-      $mpdf->Output();
+      $mpdf->Output('1911601431.pdf', 'D');
   }
 }
 ?>

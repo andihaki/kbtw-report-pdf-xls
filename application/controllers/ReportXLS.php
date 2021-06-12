@@ -20,7 +20,7 @@ class ReportXLS extends CI_Controller {
   }
 
   public function hsk() {
-    $data['title'] = 'HSK_'.$this->input->post('vKdmtk');
+    $data['title'] = ' 1911601431_HSK_'.$this->input->post('vKdmtk');
     $data['results'] = $this->Nilai_model->retrieve($this->input->post('vKdmtk'));
 
     $this->load->view( 'ReportXLSExport_view' , $data) ;
